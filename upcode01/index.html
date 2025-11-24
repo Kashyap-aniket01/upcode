@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UpCode — Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-indigo-50 to-white text-slate-800 antialiased">
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-indigo-500 to-pink-500 flex items-center justify-center text-white font-extrabold">UC</div>
+        <div>
+          <a href="index.html" class="text-lg font-semibold">UpCode</a>
+          <div class="text-xs text-slate-500">Physics • Short videos • Tests</div>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="#courses" class="hover:text-indigo-600">Courses</a>
+        <a href="#features" class="hover:text-indigo-600">Features</a>
+        <a href="login.html" class="hover:text-indigo-600">Login</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <div class="hidden md:block">
+          <input id="search" type="search" placeholder="Search courses, e.g. Physics" class="px-3 py-2 rounded-lg border border-slate-200 w-64" />
+        </div>
+        <a href="signup.html" class="px-4 py-2 bg-gradient-to-r from-indigo-500 to-pink-500 text-white rounded-lg shadow">Get started</a>
+        <button id="mobileToggle" class="md:hidden p-2 rounded-md bg-white shadow">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden border-t bg-white">
+      <div class="px-4 py-3">
+        <input id="searchMobile" type="search" placeholder="Search courses" class="px-3 py-2 border rounded-md w-full" />
+      </div>
+      <div class="px-4 pb-4 flex flex-col gap-2">
+        <a href="#courses" class="block">Courses</a>
+        <a href="#features" class="block">Features</a>
+        <a href="login.html" class="block">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="max-w-7xl mx-auto px-4 py-12">
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-4xl font-extrabold leading-tight">Crack Physics with short concept videos & live doubt sessions</h1>
+        <p class="mt-4 text-gray-600">Focused lessons, practice tests, and teacher-led doubt clearing. Separate flows for students and teachers (teacher = admin).</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#courses" class="px-5 py-3 bg-gradient-to-r from-indigo-500 to-pink-500 text-white rounded-md shadow">Browse Courses</a>
+          <a href="signup.html" class="px-5 py-3 border rounded-md">Create account</a>
+        </div>
+
+        <div class="mt-8 grid grid-cols-3 gap-3 max-w-md">
+          <div class="p-3 bg-white rounded-lg shadow-sm text-center">
+            <div class="text-lg font-semibold">1000+</div>
+            <div class="text-xs text-slate-500">Videos</div>
+          </div>
+          <div class="p-3 bg-white rounded-lg shadow-sm text-center">
+            <div class="text-lg font-semibold">200+</div>
+            <div class="text-xs text-slate-500">Tests</div>
+          </div>
+          <div class="p-3 bg-white rounded-lg shadow-sm text-center">
+            <div class="text-lg font-semibold">4.8★</div>
+            <div class="text-xs text-slate-500">Avg rating</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden lg:flex justify-end">
+        <div class="w-80 h-96 rounded-2xl bg-white shadow-lg p-5 flex flex-col">
+          <div class="h-40 rounded-lg bg-[url('https://images.unsplash.com/photo-1584697964199-1c9c3c2f1b58?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&s=6d2f9f2a3a9f8b5c1f4b0e7c3a6b7d8')] bg-cover bg-center"></div>
+          <div class="mt-4">
+            <div class="text-sm font-semibold">Mechanics — Crash Course</div>
+            <div class="text-xs text-slate-500 mt-1">8 videos • 2 tests</div>
+            <div class="mt-3 flex items-center gap-2">
+              <div class="w-24 h-2 bg-gray-200 rounded-full overflow-hidden"><div class="h-2 rounded-full" style="width:45%; background:linear-gradient(90deg,#6366f1,#ec4899);"></div></div>
+              <div class="text-xs text-slate-500">45% complete</div>
+            </div>
+            <div class="mt-4 flex gap-2">
+              <a href="module.html" class="px-3 py-2 bg-indigo-600 text-white rounded-md">Continue</a>
+              <a href="module.html" class="px-3 py-2 border rounded-md">Preview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses / Modules -->
+    <section id="courses" class="mt-12">
+      <div class="flex items-center justify-between">
+        <h2 class="text-2xl font-bold">Featured Modules</h2>
+        <a href="#" class="text-sm text-indigo-600">View all</a>
+      </div>
+
+      <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- generate 10 modules -->
+        <article class="bg-white rounded-xl shadow-sm p-4 hover:shadow-md transition">
+          <div class="h-40 rounded-md bg-[url('https://images.unsplash.com/photo-1531266750360-3a9f76b1a6b3?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&s=1b2a3c4d5e6f7a8b9c0d')] bg-cover bg-center"></div>
+          <div class="mt-3 flex items-start justify-between gap-3">
+            <div>
+              <h3 class="font-semibold">Kinematics</h3>
+              <div class="text-xs text-slate-500 mt-1">Motion in one & two dimensions</div>
+            </div>
+            <div class="text-indigo-600 font-medium">Free</div>
+          </div>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-xs text-slate-500">4.7★ • 2.3k</div>
+            <a href="module.html" class="px-3 py-1 bg-gradient-to-r from-indigo-500 to-pink-500 text-white rounded-md">Open</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-sm p-4 hover:shadow-md transition">
+          <div class="h-40 rounded-md bg-[url('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&s=2b3c4d5e6f7a8b9c0d1e')] bg-cover bg-center"></div>
+          <div class="mt-3 flex items-start justify-between gap-3">
+            <div>
+              <h3 class="font-semibold">Laws of Motion</h3>
+              <div class="text-xs text-slate-500 mt-1">Newton's laws & problems</div>
+            </div>
+            <div class="text-indigo-600 font-medium">₹199</div>
+          </div>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-xs text-slate-500">4.6★ • 1.8k</div>
+            <a href="module.html" class="px-3 py-1 bg-gradient-to-r from-indigo-500 to-pink-500 text-white rounded-md">Open</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-sm p-4 hover:shadow-md transition">
+          <div class="h-40 rounded-md bg-[url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&s=3c4d5e6f7a8b9c0d1e2f')] bg-cover bg-center"></div>
+          <div class="mt-3 flex items-start justify-between gap-3">
+            <div>
+              <h3 class="font-semibold">Work, Energy & Power</h3>
+              <div class="text-xs text-slate-500 mt-1">Conservation & problems</div>
+            </div>
+            <div class="text-indigo-600 font-medium">₹249</div>
+          </div>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-xs text-slate-500">4.8★ • 2.0k</div>
+            <a href="module.html" class="px-3 py-1 bg-gradient-to-r from-indigo-500 to-pink-500 text-white rounded-md">Open</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-sm p-4 hover:shadow-md transition">
+          <div class="h-40 rounded-md bg-[url('https://images.unsplash.com/photo-1517976487492-8d66a71fe6af?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&s=4e5f6a7b8c9d0e1f2a3b')] bg-cover bg-center"></div>
+          <div class="mt-3 flex items-start justify-between gap-3">
+            <div>
+              <h3 class="font-semibold">Rotational Motion</h3>
+              <div class="text-xs text-slate-500 mt-1">Torque & angular momentum</div>
+            </div>
+            <div class="text-indigo-600 font-medium">₹199</div>
+          </div>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-xs text-slate-500">4.6★ • 1.2k</div>
+            <a href="module.html" class="px-3 py-1 bg-gradient-to-r from-indigo-500 to-pink-500 text-white rounded-md">Open</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-sm p-4 hover:shadow-md transition">
+          <div class="h-40 rounded-md bg-[url('https://images.unsplash.com/photo-1513506003901-1e6a229e2d5c?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&s=5f6a7b8c9d0e1f2a3b4c')] bg-cover bg-center"></div>
+          <div class="mt-3 flex items-start justify-between gap-3">
+            <div>
+              <h3 class="font-semibold">Gravitation</h3>
+              <div class="text-xs text-slate-500 mt-1">Orbits & Kepler's laws</div>
+            </div>
+            <div class="text-indigo-600 font-medium">₹299</div>
+          </div>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-xs text-slate-500">4.7★ • 900</div>
+            <a href="module.html" class="px-3 py-1 bg-gradient-to-r from-indigo-500 to-pink-500 text-white rounded-md">Open</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-sm p-4 hover:shadow-md transition">
+          <div class="h-40 rounded-md bg-[url('https://images.unsplash.com/photo-1508385082359-f7c5b1cfc2c6?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&s=6a7b8c9d0e1f2a3b4c5d')] bg-cover bg-center"></div>
+          <div class="mt-3 flex items-start justify-between gap-3">
+            <div>
+              <h3 class="font-semibold">Thermodynamics</h3>
+              <div class="text-xs text-slate-500 mt-1">Laws & engines</div>
+            </div>
+            <div class="text-indigo-600 font-medium">₹199</div>
+          </div>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-xs text-slate-500">4.5★ • 800</div>
+            <a href="module.html" class="px-3 py-1 bg-gradient-to-r from-indigo-500 to-pink-500 text-white rounded-md">Open</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-sm p-4 hover:shadow-md transition">
+          <div class="h-40 rounded-md bg-[url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&s=7b8c9d0e1f2a3b4c5d6e')] bg-cover bg-center"></div>
+          <div class="mt-3 flex items-start justify-between gap-3">
+            <div>
+              <h3 class="font-semibold">Oscillations & Waves</h3>
+              <div class="text-xs text-slate-500 mt-1">SHM & wave theory</div>
+            </div>
+            <div class="text-indigo-600 font-medium">₹149</div>
+          </div>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-xs text-slate-500">4.6★ • 600</div>
+            <a href="module.html" class="px-3 py-1 bg-gradient-to-r from-indigo-500 to-pink-500 text-white rounded-md">Open</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-sm p-4 hover:shadow-md transition">
+          <div class="h-40 rounded-md bg-[url('https://images.unsplash.com/photo-1473186578172-c141e6798cf4?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&s=8c9d0e1f2a3b4c5d6e7f')] bg-cover bg-center"></div>
+          <div class="mt-3 flex items-start justify-between gap-3">
+            <div>
+              <h3 class="font-semibold">Optics</h3>
+              <div class="text-xs text-slate-500 mt-1">Geometric & wave optics</div>
+            </div>
+            <div class="text-indigo-600 font-medium">₹249</div>
+          </div>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-xs text-slate-500">4.7★ • 1.4k</div>
+            <a href="module.html" class="px-3 py-1 bg-gradient-to-r from-indigo-500 to-pink-500 text-white rounded-md">Open</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-sm p-4 hover:shadow-md transition">
+          <div class="h-40 rounded-md bg-[url('https://images.unsplash.com/photo-1503416997304-1b4d6b6a8d37?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&s=9d0e1f2a3b4c5d6e7f8a')] bg-cover bg-center"></div>
+          <div class="mt-3 flex items-start justify-between gap-3">
+            <div>
+              <h3 class="font-semibold">Electrostatics & Circuits</h3>
+              <div class="text-xs text-slate-500 mt-1">Charge, fields & circuits</div>
+            </div>
+            <div class="text-indigo-600 font-medium">₹299</div>
+          </div>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-xs text-slate-500">4.6★ • 1.1k</div>
+            <a href="module.html" class="px-3 py-1 bg-gradient-to-r from-indigo-500 to-pink-500 text-white rounded-md">Open</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-sm p-4 hover:shadow-md transition">
+          <div class="h-40 rounded-md bg-[url('https://images.unsplash.com/photo-1523978591478-c753949ff840?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&s=a1b2c3d4e5f6g7h8i9j')] bg-cover bg-center"></div>
+          <div class="mt-3 flex items-start justify-between gap-3">
+            <div>
+              <h3 class="font-semibold">Modern Physics</h3>
+              <div class="text-xs text-slate-500 mt-1">Photoelectric effect & atoms</div>
+            </div>
+            <div class="text-indigo-600 font-medium">₹349</div>
+          </div>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-xs text-slate-500">4.8★ • 700</div>
+            <a href="module.html" class="px-3 py-1 bg-gradient-to-r from-indigo-500 to-pink-500 text-white rounded-md">Open</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="mt-12">
+      <h2 class="text-2xl font-bold">Why UpCode</h2>
+      <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="p-4 bg-white rounded-lg shadow-sm">
+          <div class="font-semibold">Short videos</div>
+          <div class="text-xs text-slate-500 mt-1">Concepts in 5-12 minutes</div>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow-sm">
+          <div class="font-semibold">Live doubt sessions</div>
+          <div class="text-xs text-slate-500 mt-1">Weekly sessions with teachers</div>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow-sm">
+          <div class="font-semibold">Practice tests</div>
+          <div class="text-xs text-slate-500 mt-1">Detailed reports & improvements</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instructors -->
+    <section id="instructors" class="mt-12 mb-12">
+      <h2 class="text-2xl font-bold">Top instructors</h2>
+      <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="p-4 bg-white rounded-lg shadow-sm flex flex-col items-center text-center">
+          <div class="w-24 h-24 rounded-full bg-gray-100"></div>
+          <div class="mt-3 font-semibold">Mr. Sharma</div>
+          <div class="text-xs text-slate-500">Physics • 10 yrs</div>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow-sm flex flex-col items-center text-center">
+          <div class="w-24 h-24 rounded-full bg-gray-100"></div>
+          <div class="mt-3 font-semibold">Ms. Iyer</div>
+          <div class="text-xs text-slate-500">Chemistry • 8 yrs</div>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow-sm flex flex-col items-center text-center">
+          <div class="w-24 h-24 rounded-full bg-gray-100"></div>
+          <div class="mt-3 font-semibold">Mr. Verma</div>
+          <div class="text-xs text-slate-500">Maths • 12 yrs</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <div class="text-xl font-bold">UpCode</div>
+        <div class="text-sm text-slate-400 mt-2">Short videos, practice tests, and doubt sessions.</div>
+      </div>
+      <div class="text-sm text-slate-400">
+        <div class="font-semibold">Support</div>
+        <div class="mt-2">help@upcode.example</div>
+      </div>
+      <div class="text-sm text-slate-400">
+        <div class="font-semibold">Follow</div>
+        <div class="mt-2 flex gap-2">
+          <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">f</div>
+          <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">in</div>
+          <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">yt</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobileToggle').addEventListener('click', function(){
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
